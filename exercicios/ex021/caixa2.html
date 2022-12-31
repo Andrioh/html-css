@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(-90deg, #485563, #29323c);
+        }
+        h1, h2, p{
+            color: white;
+        }
+        header{
+            margin: auto 100px auto 100px;
+            background-image: linear-gradient(90deg, #282f36, #29313b);
+            padding: 0px 5px 3px 5px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: #252b31;
+            text-align: right;
+            margin: auto auto auto 815px;
+            padding: 0px 2px 0px 0px;
+            box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.432);
+        }
+        a{
+            text-align: right;
+            color: gray;
+            text-decoration: none;
+        }
+        a::after{
+            content: '🔗';
+        }
+        main{
+            background-color: #242b33;
+            border-radius: 10px;
+            padding: 0px 0px 0px 8px;
+        }
+        p{
+            text-align: justify;
+            font-weight: bold;
+        }
+        footer{
+            background-color:#282f362f;
+        }
+        .credito{
+            text-align: right;
+            padding: 0px 10px 0px 0px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique placeat alias natus, optio, ex dolores tenetur veniam labore aut velit, eveniet laudantium soluta! Itaque ea iste rerum, rem in maiores.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p class="credito">Desenvolvido pelo Andrioh</p>
+    </footer>
+</body>
+</html>
