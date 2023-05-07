@@ -32,8 +32,21 @@
         }
 
         table {
+            position: relative;
             border-collapse: collapse;
             font-weight: bold;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #383838;
+        }
+
+        caption{
+            padding: 20px;
+            font-weight: bold;
+            width: 400px;
         }
 
         th {
@@ -42,10 +55,13 @@
             padding: 0px 20px 0px 20px;
         }
 
+        tbody > tr:nth-child(2n){
+            background-color: #383838;
+        }
+
         td {
             border: 1px solid black;
             padding: 10px;
-            background-color: rgb(85, 85, 85);
             text-align: center;
         }
     </style>
@@ -60,10 +76,11 @@
 
     <main>
         <table>
+            <caption>População das 3 maiores Unidade Federativas do Brasil</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
                 </tr>
             <tbody>
                 <tr>
@@ -81,7 +98,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <th><strong>84.352.783</strong></th>
                 </tr>
             </tfoot>
