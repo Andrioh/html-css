@@ -46,6 +46,7 @@ menu > ul > li > a{
     list-style-type: none;
     background-color: rgb(83, 83, 83);
     border-top: 2px solid gray;
+    border-radius: 10px;
 }
 
 li > a:hover{

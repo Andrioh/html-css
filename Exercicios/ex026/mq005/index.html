@@ -6,8 +6,9 @@
         <title>Media Query</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="Estilos/style.css">
+        <link rel="stylesheet" href="Estilos/mediaquery.css">
     </head>
-    <body>
+    <body onresize="resize()">
         <header>
             <h1>Meu site</h1>
             <i id="burguer" class="material-icons" onclick="clickmenu()">menu</i>
@@ -30,13 +31,21 @@
             </article>
         </main>
         <script>
-                let click = 1;
+            let click = 1;
             function clickmenu() {
                 if (click == 1){
                     click = 2
                     itens.style.display = 'block'
                 } else if (click == 2) {
                     click = 1
+                    itens.style.display = 'none'
+                }
+            }
+
+            function resize() {
+                if (window.innerWidth >= 768) {
+                    itens.style.display = 'block'
+                } else {
                     itens.style.display = 'none'
                 }
             }
