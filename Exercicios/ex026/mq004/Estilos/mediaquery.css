@@ -13,10 +13,8 @@ Outros: acima de 1200px
 
 @media print {
 
-    body {
-        background: black url(../../imagens/back-print.jpg) no-repeat;
-        background-size: cover;
-        background-position: center center;
+    *{
+        font-family: 'Courier New', Courier, monospace;
     }
 
     img#celular {
